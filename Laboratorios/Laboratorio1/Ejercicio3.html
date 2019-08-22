@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Ejercicio 3</title>
+</head>
+<body>
+    <h1>Formulario</h1>
+
+    <form action="Ejercicio3.html">
+        <fieldset>
+            <legend>
+                Personal information:
+            </legend>
+            <label for="firstname">Nombre: </label>
+            <input type="text" name="firstname" placeholder="Ingrese el nombre">
+            <br><br>
+            <label for="lastname">Apellidos: </label>
+            <input type="text" name="lastname" placeholder="Ingrese su apellido">
+            <br><br>
+            <label for="birthday">Nacimiento: </label>
+            <input type="date" name="birthday">
+            <br><br>
+            <label for="gender">Genero: </label>
+            <input type="radio" name="gender" value="M"> Masculino
+            <input type="radio" name="gender" value="F"> Femenino
+            <input type="radio" name="gender" value="O"> Otros: 
+            <input type="text" name="others" placeholder="Ingrese el genero">
+        </fieldset>
+        <br>
+        <fieldset>
+            <legend>
+                Sign Up Information
+            </legend>
+            <label for="email">E-mail: </label>
+            <input type="text" name="email" placeholder="Ingrese el email">
+            <br><br>
+            <label for="password">Password: </label>
+            <input type="password" name="password" placeholder="Ingrese contraseña" required>
+            <br><br>
+            <label for="Verifypassword">Verify Password: </label>
+            <input type="password" name="Verifypassword" placeholder="Ingrese nuevamente contraseña" required>
+            <br><br>
+        </fieldset>
+        <br><br>
+        <input type="submit" name="SubmitButton" value="Submit">
+        <input type="reset" name="resetButton" value="Reset Fields">
+    </form>
+</body>
+</html>
