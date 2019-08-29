@@ -27,6 +27,9 @@
         opacity: 0.8;
         text-transform: uppercase;
     }
+    .btn:hover{
+        opacity: 1.0;
+    }
 
     /*
         Sección Tamaños
@@ -38,6 +41,13 @@
             -Tamaño de fuente de 1.1em
     */
 
+    .btn.small{
+        font-size: 0.7em;
+    }
+    .btn.big{
+        font-size: 1.1em;
+    }
+
     /*
         Sección Colores
 
@@ -47,6 +57,22 @@
             -sky: Fondo #00BCD4; color de texto blanco
             -purple: Fondo #673AB7; color de texto blanco
     */
+    .btn.black{
+        color: white;
+        background-color: #1A237E;
+    }
+    .btn.green{
+        color: white;
+        background-color: #4CAF50;
+    }
+    .btn.sky{
+        color: white;
+        background-color: #00BCD4;
+    }
+    .btn.purple{
+        color: white;
+        background-color: #673AB7;
+    }
 
     /*
         Sección Bordes
@@ -60,3 +86,26 @@
             -sky: Color de borde y texto -> #00BCD4
             -purple: Color de borde y texto -> #673AB7
     */
+
+    .btn.border{
+        background-color: transparent;
+        border-style: solid;
+        border-color: #1A237E;
+        color: #1A237E;
+    }
+
+    .btn.border.green{
+        border-style: solid;
+        border-color: #4CAF50;
+        color : #4CAF50;
+    }
+    .btn.border.sky{
+        border-style: solid;
+        border-color: #00BCD4;
+        color: #00BCD4;
+    }
+    .btn.border.purple{
+        border-style: solid;
+        border-color: #673AB7;
+        color: #673AB7;
+    }
