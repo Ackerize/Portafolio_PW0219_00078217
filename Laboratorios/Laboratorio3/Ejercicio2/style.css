@@ -1,0 +1,109 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari|PT+Serif&display=swap");
+
+body{
+    background-image: url("https://www.xtrafondos.com/wallpapers/patrones-con-ilustraciones-neon-3475.jpg");
+    margin-bottom: 1px;
+}
+.btn{
+    border: solid 1px transparent;
+    border-radius: 0.7em;
+    box-shadow: 1px 1px black;
+    font-family: 'Manjari', sans-serif;
+    color: white;
+    opacity: 0.6;
+}
+
+.superiores>.btn{
+    width: 8em;
+    margin: 0.5em;
+    height: 2.8em;
+    margin: 1em;
+}
+
+.superiores{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: flex-end;
+    margin: 1em 5em;
+}
+
+.texto{
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+}
+
+
+.iconos{
+    margin: 1em auto;
+    width: 50%;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    
+    
+}
+
+.btn.FAQ{
+    width: 5em;
+    background-color: #F4385A;
+    
+}
+.btn.Download{
+    background-color: rgb(121, 106, 42);
+}
+.btn.open{
+    background-color: rgb(104, 53, 172);
+}
+div>p{
+    font-family: 'PT Serif', serif;
+    text-align: center;
+    text-transform: uppercase;
+    color:white;
+    font-size: 4em;
+    background-color: rgba(14, 218, 184, 0.493);
+    opacity: 0.7;
+    border-radius: 0.1em;
+    width: 5em;
+    padding: 3px;
+}
+hr{
+    margin: 0 auto;
+    width: 45em;
+    border: 3px solid white;
+    border-radius: 0.2em;
+}
+.icn>img{
+    margin: 1em 1em;
+    border: 1px solid black;
+    width: 5em;
+    border-radius: 2.5em;
+    opacity: 0.7;
+    height: 80px;
+}
+.inferiores{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    margin: 1em 3em 0.1em;
+}
+
+.inferiores>.btn{
+    width: 7.2em;
+    margin: 0.5em;
+    height: 2.4em;
+    margin: 1em;
+    text-decoration: underline;
+    color: black;
+    background: white;
+
+}
+
+.btn:hover, img:hover, p:hover{
+    opacity: 1;
+}
+
+.btn.Help{
+    width: 6em;
+}
