@@ -1,0 +1,142 @@
+@import url("https://fonts.googleapis.com/css?family=Manjari|PT+Serif&display=swap");
+
+$fuente-botones: "Manjari", sans-serif;
+$fuente-titulo: "PT Serif", serif;
+$color-faq: #f4385a;
+$color-download: rgb(121, 106, 42);
+$color-open: rgb(104, 53, 172);
+$color-fondo: rgba(14, 218, 184, 0.493);
+$opacidad-hover: 1;
+
+@mixin hacer-flex($justify, $align, $flow) {
+  display: flex;
+  justify-content: $justify;
+  align-items: $align;
+  flex-flow: $flow;
+}
+
+@mixin crear-titulo($fuente, $align, $transform, $color, $size) {
+  font-family: $fuente;
+  text-align: $align;
+  text-transform: $transform;
+  color: $color;
+  font-size: $size;
+}
+
+@mixin hacer-margin-padding($margin, $padding) {
+  margin: $margin;
+  padding: $padding;
+}
+
+@mixin hacer-width-height($ancho,$alto){
+    width: $ancho;
+    height: $alto;
+}
+
+body {
+  background-image: url("https://www.xtrafondos.com/wallpapers/patrones-con-ilustraciones-neon-3475.jpg");
+  margin-bottom: 1px;
+}
+
+.btn {
+  border: solid 1px transparent;
+  border-radius: 0.7em;
+  box-shadow: 1px 1px black;
+  font-family: $fuente-botones;
+  color: white;
+  opacity: 0.6;
+}
+.btn {
+  &.FAQ {
+    @include hacer-width-height(5em,auto);
+    background-color: $color-faq;
+  }
+}
+
+.btn {
+  &.Download {
+    background-color: $color-download;
+  }
+}
+.btn {
+  &.open {
+    background-color: $color-open;
+  }
+}
+
+.superiores {
+  .btn {
+    @include hacer-width-height(8em,2.8em);
+    @include hacer-margin-padding(1em, 0);
+  }
+}
+
+.superiores {
+  @include hacer-flex(flex-end, flex-start, row wrap);
+  @include hacer-margin-padding(1em 5em, 0);
+}
+
+.texto {
+  @include hacer-width-height(auto,400px);
+  @include hacer-flex(center, flex-end, row nowrap);
+}
+
+.iconos {
+  @include hacer-margin-padding(1em auto, 0);
+  @include hacer-width-height(50%,auto);
+  @include hacer-flex(center, flex-start, row wrap);
+}
+
+div {
+  p {
+    @include crear-titulo($fuente-titulo, center, uppercase, white, 4em);
+    background-color: $color-fondo;
+    opacity: 0.7;
+    border-radius: 0.1em;
+    @include hacer-width-height(5em,auto);
+    @include hacer-margin-padding(0, 3px);
+  }
+}
+
+hr {
+  @include hacer-margin-padding(1em auto, 0);
+  @include hacer-width-height(45em,auto);
+  border: 3px solid white;
+  border-radius: 0.2em;
+}
+
+.icn {
+  img {
+    @include hacer-margin-padding(1em 1em, 0);
+    border: 1px solid black;
+    @include hacer-width-height(5em,80px);
+    border-radius: 2.5em;
+    opacity: 0.7;
+  }
+}
+.inferiores {
+  @include hacer-flex(space-between, flex-end, row wrap);
+  @include hacer-margin-padding(1em 3em 0.1em, 0);
+}
+
+.inferiores {
+  .btn {
+    @include hacer-margin-padding(1em, 0);
+    @include hacer-width-height(7.2em,2.4em);
+    text-decoration: underline;
+    color: black;
+    background: white;
+  }
+}
+
+.btn {
+  &.Help {
+    @include hacer-width-height(6em,2.4em);
+  }
+}
+
+.btn:hover,
+p:hover,
+img:hover {
+  opacity: $opacidad-hover;
+}
